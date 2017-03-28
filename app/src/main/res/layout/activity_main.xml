@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pain.testtranstition.MainActivity">
+
+<Button
+    android:text="点击转换"
+    android:id="@+id/button"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+    <Button
+        android:text="旧的缩小新的推上来"
+        android:id="@+id/button_scaleandpush"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:text="Api21+Activity的切换方式"
+        android:id="@+id/button_fade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:transitionName="share"
+        android:id="@+id/image_view"
+        android:background="@mipmap/wife"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        />
+    <FrameLayout
+        android:id="@+id/root_alyout"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+        <include layout="@layout/scence1"/>
+    </FrameLayout>
+</LinearLayout>
